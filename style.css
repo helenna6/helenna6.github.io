@@ -1,55 +1,210 @@
-html,
 body {
-  height: 100%;
+  margin: 0;
+  color: #ff7b00;
+  font-family: Open Sans, sans-serif;
+  letter-spacing: 1px;
+  font-weight: 300;
+  font-size: 15px;
+}
+
+h1 {
+  color: rgb(251, 255, 0);
+  font-family: Comfortaa, cursive;
+  letter-spacing: 3px;
+  font-size: 42px;
+  text-align: center;
   margin: 0;
 }
 
-body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  cursor: pointer;
+h2 {
+  font-size: 80px;
+  margin: 5px 0 0;
 }
 
-.container {
+h3 {
+  font-size: 28px;
+  font-weight: 300;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+}
+
+header {
+  background-color: rgb(255, 0, 0);
+  padding: 0px 8px 0px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#new-game-button {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  margin-top: 60px;
+  padding: 12px 15px;
+  border: 10px solid;
+  border-radius: 5px;
+  box-shadow: 0px 0px 3px rgb(255, 238, 0);
+}
+
+#new-game-button:hover {
+  background-color: white;
+  color: lightpink;
+  margin-top: 40px;
+  padding: 12px 15px;
+  border: 1px solid white;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px 2px white;
+}
+
+#game-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 8px 30px;
+}
+
+#game-container.hidden {
+  display: none;
+}
+
+#game {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 900px;
+  perspective: 800px;
+}
+
+.game-card {
+  height: 180px;
+  width: 180px;
+  margin: 5px;
+  cursor: pointer;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform .65s;
+  box-shadow: 0px 2px 4px gray;
+}
+
+.game-card figure {
+  margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: absolute;
+  width: 100%;
   height: 100%;
+  backface-visibility: hidden;
 }
 
-#score {
-  position: absolute;
-  top: 30px;
-  right: 30px;
-  font-size: 2em;
-  font-weight: 900;
+.game-card .front {
+  background-color: #b6e6ff;
 }
 
-#introduction {
-  width: 200px;
-  height: 150px;
-  position: absolute;
-  font-weight: 600;
-  font-size: 0.8em;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  text-align: center;
-  transition: opacity 2s;
+.game-card .back {
+  background-color: lightpink;
+  transform: rotateY(180deg);
 }
 
-#restart {
-  width: 120px;
-  height: 120px;
+@media (max-width: 800px) {
+  .game-card {
+    height: 150px;
+    width: 150px;
+  }
+}
+
+.game-card.flipped {
+  transform: rotateY(180deg);
+}
+
+#score-board {
+  margin: 30px 0 0;
+  display: flex;
+}
+
+.score {
+  display: inline-block;
+  padding: 0 20px 0;
+}
+
+#score-board.hidden {
+  visibility: hidden;
+}
+
+#win-screen {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  background-color: rgba(230,230,250, 0.95);
   position: absolute;
-  border-radius: 50%;
-  color: white;
-  background-color: red;
-  border: none;
-  font-weight: 700;
-  font-size: 1.2em;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  display: none;
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+  opacity: 0;
+}
+
+#win-screen>* {
+  line-height: 0;
+  margin: 25px;
+}
+
+#win-screen.visible {
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.8s;
+}
+
+#replay-button {
   cursor: pointer;
+  padding: 15px;
+  margin: 10px;
+  background-color: #f0f0ff;
+  border: 1px solid white;
+  border-radius: 5px;
+  box-shadow: 0px 0px 3px white;
 }
 
+#replay-button:hover {
+  background-color: #f8f8ff;
+  border: 1px solid white;
+  box-shadow: 0px 0px 5px 1px white;
+}
+
+em {
+  font-size: 14px;
+}
+
+footer {
+  background-color: lightpink;
+  font-size: 13px;
+  padding: 12px;
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+footer.hidden {
+  display: none;
+}
+
+footer a:hover {
+  color: #808080;
+}
 #perfect {
   position: absolute;
   opacity: 0;
