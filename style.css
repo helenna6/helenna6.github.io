@@ -1,77 +1,57 @@
+html,
 body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
+  height: 100%;
   margin: 0;
-  background-color: #00fff2;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  cursor: pointer;
 }
 
 .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+#score {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  font-size: 2em;
+  font-weight: 900;
+}
+
+#introduction {
+  width: 200px;
+  height: 150px;
+  position: absolute;
+  font-weight: 600;
+  font-size: 0.8em;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
+  transition: opacity 2s;
 }
 
-#gifContainerImg {
-  width: 60%;
-  height: 60%;
-}
-
-button {
-  padding: 10px 20px;
-  font-size: 16px;
-  margin: 10px;
-  cursor: pointer;
-}
-#siBtn {
-  padding: 10px 20px;
-  font-size: 16px;
-  margin: 10px;
-  cursor: pointer;
-  background-color: #009705; /* Verde */
+#restart {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  border-radius: 50%;
   color: white;
-  border: 2px solid #ffc0cb; /* Bordes rosa */
-  border-radius: 10px; /* Esquinas redondeadas */
-}
-
-#noBtn {
-  padding: 10px 20px;
-  font-size: 16px;
-  margin: 10px;
+  background-color: red;
+  border: none;
+  font-weight: 700;
+  font-size: 1.2em;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: none;
   cursor: pointer;
-  background-color: #ff5733; /* Rojo */
-  color: white;
-  border: 2px solid #ffc0cb; /* Bordes rosa */
-  border-radius: 10px; /* Esquinas redondeadas */
-}
-#noBtn span {
-  font-size: 18px;
-  color: #fcf4f4; /* Cambia el color del texto según tus preferencias */
-  /* Otras propiedades de estilo aquí */
 }
 
-#siBtn:hover {
-  background-color: #053a03; /* Cambia a otro color en hover, puedes ajustar el valor según tus preferencias */
-}
-#noBtn:hover {
-  background-color: #641e0d; /* Cambia a otro color en hover, puedes ajustar el valor según tus preferencias */
-}
-.bg-green {
-  background-color: #ffffff; /* Nuevo color de fondo verde */
-}
-
-#messageContainer {
-  font-size: 30px;
-  color: #ff0000; /* Color rojo */
-  font-family: "YourDesiredFont", sans-serif; /* Reemplaza 'YourDesiredFont' con la fuente que desees */
-  text-shadow: 2px 2px 4px #000; /* Borde simulado */
-  animation: pulse 0.5s infinite alternate; /* Animación de palpitación más rápida */
-}
-
-@keyframes pulse {
-  from {
-    transform: scale(1);
-  }
-  to {
-    transform: scale(1.3); /* Zoom más grande */
-  }
+#perfect {
+  position: absolute;
+  opacity: 0;
+  transition: opacity 2s;
 }

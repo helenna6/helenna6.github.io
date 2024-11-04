@@ -1,78 +1,19 @@
 <!DOCTYPE html>
-<html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-   
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Stick Ninja</title>
+  <link rel="stylesheet" href="./style.css">
 
-    <title>Invitación a San Valentín</title>
-
-  </head>
+</head>
   <body>
     <div class="container">
-      <div id="gifContainer">
-        <img id="gifContainerImg" src="https://tenor.com/es/view/spain-flag-gif-europe-gif-27418113.gif"
-        alt="Ositos Iniciales" ">
-      </div>
-      <div id="happyGifContainer" style="display: none">
-        <img
-          src="https://tenor.com/es/view/mua-kiss-love-despicableme-minions-gif-5155189324031379973.gif"
-          alt="Ositos Felices"
-          style="width: 100%; height: 100%"
-        />
-      </div>
-      <div id="happyGifContainer2" style="display: none">
-        <img
-          src="https://tenor.com/es/view/hype-happy-minions-gif-15582666231204862369.gif"
-          alt="Ositos Felices"
-          style="width: 100%; height: 100%"
-        />
-      </div>
-      <div id="happyGifContainer3" style="display: none">
-        <img
-          src="https://tenor.com/es/view/minionns-gif-27447899.gif"
-          alt="Ositos Felices"
-          style="width: 100%; height: 100%"
-        />
-      </div>
-      <div id="happyGifContainer4" style="display: none">
-        <img
-          src="https://tenor.com/es/view/minion-minions-minion-dave-dave-the-minion-minion-happy-gif-6551300951599311638.gif"
-          alt="Ositos Felices"
-          style="width: 100%; height: 100%"
-        />
-      </div>
-      <div id="sadGifContainer" style="display: none">
-        <img
-          src="https://tenor.com/es/view/me-sad-me-very-sad-sad-gif-14435084487592172410.gif"
-          alt="Osito Triste"
-          style="width: 80%; height: 80%"
-          id="ositotriste"
-        />
-      </div>
-      <div id="sadGifContainer1" style="display: none">
-        <img
-          src="https://tenor.com/es/view/byuntear-bunny-bunny-sad-sad-annoyed-gif-25869775.gif"
-          alt="Osito Triste"
-          style="width: 80%; height: 80%"
-        />
-      </div>
-      <div id="sadGifContainer2" style="display: none">
-        <img
-          src="https://tenor.com/es/view/guardians-of-the-galaxy-groot-sad-upset-crying-gif-18494599.gif"
-          alt="Osito Triste"
-          style="width: 80%; height: 80%"
-        />
-      </div>
-
-      <h1 id="question">¿Quieres ser mi San Valentín?</h1>
-      <div id="messageContainer" style="display: none"></div>
-
-      <button id="siBtn">Sí</button>
-      <button id="noBtn">No</button>
+      <div id="score"></div>
+      <canvas id="game" width="375" height="375"></canvas>
+      <div id="introduction">Manten muplsado para crear el stick. PD: eres la 1ª persona en probar este juego</div>
+      <div id="perfect">DOUBLE SCORE</div>
+      <button id="restart">REINICIO</button>
     </div>
-
-    <script src="script.js"></script>
+    <script  src="./script.js"></script>
   </body>
 </html>
