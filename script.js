@@ -68,7 +68,7 @@ const acronymQuiz = [
 			"Bayern Leverkusen",
 			"Real Madrid",
 			"Inter de Milan"
-		]
+		],
 		answer: "Real Madrid"
 	}
 	// Add more Questions here
