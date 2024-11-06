@@ -52,7 +52,7 @@ const acronymQuiz = [
 			"5"
 		],
 		answer: "7"
-	}
+	},
 	{
 		question: "Principal favorito para ganar la liga este año",
 		options: [
