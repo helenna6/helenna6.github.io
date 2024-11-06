@@ -18,7 +18,7 @@ const acronymQuiz = [
 		answer: "Real Madrid"
 	},
 	{
-		question: "¿Cuantas veces puede llorar/protestar/insultar al árbitro sin que lo expulsen?",
+		question: "¿Cuantas veces puede llorar/protestar/insultar Vinicius al árbitro sin que lo expulsen?",
 		options: [
 			"Las que quiera",
 			"2",
@@ -45,7 +45,25 @@ const acronymQuiz = [
 		answer: "4"
 	},
 	{
-		question: "¿Cuántos equipos españoles hay en competicion europea (champions, europa y conference league)?",
+		question: "¿Qué equipo ganó la champions en 2001?",
+		options: [
+			"Bayern Leverkusen",
+			"Real Madrid",
+			"Inter de Milan"
+		],
+		answer: "Real Madrid"
+	},
+	{
+		question: "Candidato para ganar la liga este año",
+		options: [
+			"Atlético de Madrid",
+			"FC Barcelona",
+			"Real Madrid"
+		],
+		answer: "FC Barcelona"
+	},
+	{
+		question: "Total de equipos españoles en competicion europea (champions, europa y conference league)",
 		options: [
 			"4",
 			"7",
@@ -54,22 +72,23 @@ const acronymQuiz = [
 		answer: "7"
 	},
 	{
-		question: "Principal favorito para ganar la liga este año",
+		question: "Mejor entrenador que ha tenido el Granada",
 		options: [
-			"Girona",
-			"Real Madrid",
-			"FC Barcelona"
+			"Lucas Alcaraz",
+			"Sandoval",
+			"Diego Martínez"
 		],
-		answer: "7"
+		answer: "Diego Martínez"
 	},
 	{
-		question: "¿Qué equipo ganó la champions en 2001?",
+		question: "Maximo goleador del Granada",
 		options: [
-			"Bayern Leverkusen",
-			"Real Madrid",
-			"Inter de Milan"
+			"Uzuni",
+			"Puertas",
+			"Ighalo",
+			"Ninguna es correcta"
 		],
-		answer: "Real Madrid"
+		answer: "Ninguna es correcta"
 	}
 	// Add more Questions here
 ];
@@ -134,7 +153,7 @@ function checkAnswer(selectedAnswer) {
 			});
 			output += `<p class="message">ntp,<a onclick="resetQuiz()">intentalo tra vez si quieres!</a></p>`;
 		} else {
-			output += `<h2>Perfesto!<br>😉👌</h2>`;
+			output += `<h2>Perfesto! Las tienes toas bien!<br>😉👌</h2>`;
 		}
 		document.getElementById("question").innerHTML = output;
 	}
