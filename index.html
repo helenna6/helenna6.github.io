@@ -2,82 +2,14 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>CARD GAME</title>
-  <link href="https://fonts.googleapis.com/css?family=Comfortaa|Open+Sans:300" rel="stylesheet">
-<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-<script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script><link rel="stylesheet" href="./style.css">
-
+  <title>QUIZ GAME</title>
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-<header>
-  <h1>CARD GAME</h1>
-  <a href="#game-container" id="new-game-button">Jugar</a>
-</header>
-<section id="game-container" class="hidden">
-  <section id="game">
-    <div id="game-card-1" class="game-card">
-      <figure class="front"></figure>
-      <figure class="back"></figure>
-    </div>
-    <div id="game-card-2" class="game-card">
-      <figure class="front"></figure>
-      <figure class="back"></figure>
-    </div>
-    <div id="game-card-3" class="game-card">
-      <figure class="front"></figure>
-      <figure class="back"></figure>
-    </div>
-    <div id="game-card-4" class="game-card">
-      <figure class="front"></figure>
-      <figure class="back"></figure>
-    </div>
-    <div id="game-card-5" class="game-card">
-      <figure class="front"></figure>
-      <figure class="back"></figure>
-    </div>
-    <div id="game-card-6" class="game-card">
-      <figure class="front"></figure>
-      <figure class="back"></figure>
-    </div>
-    <div id="game-card-7" class="game-card">
-      <figure class="front"></figure>
-      <figure class="back"></figure>
-    </div>
-    <div id="game-card-8" class="game-card">
-      <figure class="front"></figure>
-      <figure class="back"></figure>
-    </div>
-    <div id="game-card-9" class="game-card">
-      <figure class="front"></figure>
-      <figure class="back"></figure>
-    </div>
-    <div id="game-card-10" class="game-card">
-      <figure class="front"></figure>
-      <figure class="back"></figure>
-    </div>
-    <div id="game-card-11" class="game-card">
-      <figure class="front"></figure>
-      <figure class="back"></figure>
-    </div>
-    <div id="game-card-12" class="game-card">
-      <figure class="front"></figure>
-      <figure class="back"></figure>
-    </div>
-  </section>
-  <section id="score-board" class="">
-    <div class="score low-score">Puntuación más baja: N/A</div>
-    <div class="score click-count">Total Clicks: 0</div>
-  </section>
-  <div id="win-screen" class="">
-    <h3>🎯 Nailed It! 🎯</h3>
-    <div class="score click-count">Total Clicks: 0</div>
-    <div class="score low-score">Puntuación más baja:</div>
-    <a id="replay-button">Play Again?</a>
+  <p class="title">QUIZ GAME<span id="currentQuest"> </span></p>
+  <div id="question">
+	  <h2 id="heading"></h2>
   </div>
-</section>
-<footer class="hidden"> Coded and designed con mucho clase ;) <i class="far fa-hand-spock"></i> by <a href="https://goyanespaula.github.io/" target="a_blank">HGM</a> 2024 <i class="far fa-copyright"></i>
-</footer>
   <script  src="./script.js"></script>
-
 </body>
 </html>
