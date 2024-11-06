@@ -43,6 +43,33 @@ const acronymQuiz = [
 			"4"
 		],
 		answer: "4"
+	},
+	{
+		question: "¿Cuántos equipos españoles hay en competicion europea (champions, europa y conference league)?",
+		options: [
+			"4",
+			"7",
+			"5"
+		],
+		answer: "7"
+	}
+	{
+		question: "Principal favorito para ganar la liga este año",
+		options: [
+			"Girona",
+			"Real Madrid",
+			"FC Barcelona"
+		],
+		answer: "7"
+	},
+	{
+		question: "¿Qué equipo ganó la champions en 2001?",
+		options: [
+			"Bayern Leverkusen",
+			"Real Madrid",
+			"Inter de Milan"
+		]
+		answer: "Real Madrid"
 	}
 	// Add more Questions here
 ];
